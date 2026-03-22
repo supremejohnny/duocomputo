@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mvn -version)",
+      "Bash(java -version)",
+      "Bash(where choco:*)",
+      "Bash(where winget:*)",
+      "Bash(choco install:*)"
+    ]
+  }
+}

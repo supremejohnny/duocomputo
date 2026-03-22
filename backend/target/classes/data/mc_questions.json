@@ -1,0 +1,137 @@
+[
+  {
+    "id": "a1b2c3d4-1111-4000-8000-000000000001",
+    "type": "choice",
+    "category": "计算机网络",
+    "difficulty": "easy",
+    "question": "TCP 和 UDP 的主要区别是什么？",
+    "options": [
+      { "id": "A", "text": "TCP 是面向连接的，UDP 是无连接的" },
+      { "id": "B", "text": "TCP 是无连接的，UDP 是面向连接的" },
+      { "id": "C", "text": "两者都是面向连接的" },
+      { "id": "D", "text": "两者都是无连接的" }
+    ],
+    "correctAnswerIdx": "A",
+    "explanation": "TCP（传输控制协议）是面向连接的协议，通信前需要建立连接（三次握手）；UDP（用户数据报协议）是无连接的，直接发送数据，不保证可靠交付。"
+  },
+  {
+    "id": "a1b2c3d4-1111-4000-8000-000000000002",
+    "type": "choice",
+    "category": "Java 基础",
+    "difficulty": "easy",
+    "question": "Java 中 `String` 是什么类型？",
+    "options": [
+      { "id": "A", "text": "基本数据类型" },
+      { "id": "B", "text": "引用类型（对象）" },
+      { "id": "C", "text": "枚举类型" },
+      { "id": "D", "text": "接口类型" }
+    ],
+    "correctAnswerIdx": "B",
+    "explanation": "String 在 Java 中是引用类型，它是 java.lang.String 类的实例。虽然 Java 对 String 有特殊的语法支持（如字面量），但它本质上是一个对象。"
+  },
+  {
+    "id": "a1b2c3d4-1111-4000-8000-000000000003",
+    "type": "choice",
+    "category": "操作系统",
+    "difficulty": "easy",
+    "question": "进程和线程的关系是？",
+    "options": [
+      { "id": "A", "text": "线程包含进程" },
+      { "id": "B", "text": "进程包含线程" },
+      { "id": "C", "text": "进程和线程没有关系" },
+      { "id": "D", "text": "它们是同一个概念" }
+    ],
+    "correctAnswerIdx": "B",
+    "explanation": "一个进程可以包含多个线程。进程是资源分配的基本单位，线程是 CPU 调度的基本单位。线程共享进程的内存空间和资源。"
+  },
+  {
+    "id": "a1b2c3d4-1111-4000-8000-000000000004",
+    "type": "choice",
+    "category": "数据结构",
+    "difficulty": "easy",
+    "question": "栈（Stack）的特点是什么？",
+    "options": [
+      { "id": "A", "text": "先进先出（FIFO）" },
+      { "id": "B", "text": "先进后出（FILO）" },
+      { "id": "C", "text": "随机访问" },
+      { "id": "D", "text": "按优先级出队" }
+    ],
+    "correctAnswerIdx": "B",
+    "explanation": "栈是一种后进先出（LIFO / FILO）的数据结构。最后压入栈的元素最先被弹出。常见操作有 push（压栈）和 pop（弹栈）。"
+  },
+  {
+    "id": "a1b2c3d4-1111-4000-8000-000000000005",
+    "type": "choice",
+    "category": "计算机网络",
+    "difficulty": "medium",
+    "question": "HTTP 状态码 404 表示什么？",
+    "options": [
+      { "id": "A", "text": "服务器内部错误" },
+      { "id": "B", "text": "请求被重定向" },
+      { "id": "C", "text": "请求的资源未找到" },
+      { "id": "D", "text": "请求成功" }
+    ],
+    "correctAnswerIdx": "C",
+    "explanation": "404 Not Found 表示服务器无法找到请求的资源。常见状态码：200（成功）、301（永久重定向）、403（禁止访问）、500（服务器内部错误）。"
+  },
+  {
+    "id": "a1b2c3d4-1111-4000-8000-000000000006",
+    "type": "choice",
+    "category": "Java 基础",
+    "difficulty": "medium",
+    "question": "以下哪个关键字用于 Java 中的异常处理？",
+    "options": [
+      { "id": "A", "text": "throw" },
+      { "id": "B", "text": "assert" },
+      { "id": "C", "text": "volatile" },
+      { "id": "D", "text": "transient" }
+    ],
+    "correctAnswerIdx": "A",
+    "explanation": "throw 关键字用于手动抛出异常。Java 异常处理的关键字包括：try、catch、finally、throw、throws。assert 用于断言，volatile 和 transient 用于修饰变量。"
+  },
+  {
+    "id": "a1b2c3d4-1111-4000-8000-000000000007",
+    "type": "choice",
+    "category": "数据结构",
+    "difficulty": "medium",
+    "question": "二叉搜索树（BST）中查找操作的平均时间复杂度是？",
+    "options": [
+      { "id": "A", "text": "O(1)" },
+      { "id": "B", "text": "O(log n)" },
+      { "id": "C", "text": "O(n)" },
+      { "id": "D", "text": "O(n log n)" }
+    ],
+    "correctAnswerIdx": "B",
+    "explanation": "在平衡的二叉搜索树中，查找的平均时间复杂度为 O(log n)，因为每次比较都能排除一半的节点。但最坏情况（退化为链表）是 O(n)。"
+  },
+  {
+    "id": "a1b2c3d4-1111-4000-8000-000000000008",
+    "type": "choice",
+    "category": "操作系统",
+    "difficulty": "medium",
+    "question": "死锁产生的四个必要条件中，不包括下面哪一个？",
+    "options": [
+      { "id": "A", "text": "互斥条件" },
+      { "id": "B", "text": "请求与保持条件" },
+      { "id": "C", "text": "先来先服务条件" },
+      { "id": "D", "text": "循环等待条件" }
+    ],
+    "correctAnswerIdx": "C",
+    "explanation": "死锁的四个必要条件是：互斥条件、请求与保持条件、不可剥夺条件、循环等待条件。先来先服务（FCFS）是一种调度算法，不是死锁条件。"
+  },
+  {
+    "id": "a1b2c3d4-1111-4000-8000-000000000009",
+    "type": "choice",
+    "category": "Java 基础",
+    "difficulty": "easy",
+    "question": "如果要创建一个永远不会改变的常量（如π），该使用什么语句？",
+    "options": [
+      { "id": "A", "text": "public static final π" },
+      { "id": "B", "text": "private static π" },
+      { "id": "C", "text": "public int π" },
+      { "id": "D", "text": "public final π" }
+    ],
+    "correctAnswerIdx": "A",
+    "explanation": "TODO1"
+  }
+]

@@ -1,0 +1,167 @@
+[
+  {
+    "id": "c1",
+    "type": "choice",
+    "category": "计算机网络",
+    "difficulty": "easy",
+    "content": "TCP 和 UDP 的主要区别是什么？",
+    "options": [
+      "TCP 是面向连接的，UDP 是无连接的",
+      "TCP 是无连接的，UDP 是面向连接的",
+      "两者都是面向连接的",
+      "两者都是无连接的"
+    ],
+    "correctAnswer": "TCP 是面向连接的，UDP 是无连接的",
+    "explanation": "TCP（传输控制协议）是面向连接的协议，通信前需要建立连接（三次握手）；UDP（用户数据报协议）是无连接的，直接发送数据，不保证可靠交付。"
+  },
+  {
+    "id": "c2",
+    "type": "choice",
+    "category": "Java 基础",
+    "difficulty": "easy",
+    "content": "Java 中 `String` 是什么类型？",
+    "options": [
+      "基本数据类型",
+      "引用类型（对象）",
+      "枚举类型",
+      "接口类型"
+    ],
+    "correctAnswer": "引用类型（对象）",
+    "explanation": "String 在 Java 中是引用类型，它是 java.lang.String 类的实例。虽然 Java 对 String 有特殊的语法支持（如字面量），但它本质上是一个对象。"
+  },
+  {
+    "id": "c3",
+    "type": "choice",
+    "category": "操作系统",
+    "difficulty": "easy",
+    "content": "进程和线程的关系是？",
+    "options": [
+      "线程包含进程",
+      "进程包含线程",
+      "进程和线程没有关系",
+      "它们是同一个概念"
+    ],
+    "correctAnswer": "进程包含线程",
+    "explanation": "一个进程可以包含多个线程。进程是资源分配的基本单位，线程是 CPU 调度的基本单位。线程共享进程的内存空间和资源。"
+  },
+  {
+    "id": "c4",
+    "type": "choice",
+    "category": "数据结构",
+    "difficulty": "easy",
+    "content": "栈（Stack）的特点是什么？",
+    "options": [
+      "先进先出（FIFO）",
+      "先进后出（FILO）",
+      "随机访问",
+      "按优先级出队"
+    ],
+    "correctAnswer": "先进后出（FILO）",
+    "explanation": "栈是一种后进先出（LIFO / FILO）的数据结构。最后压入栈的元素最先被弹出。常见操作有 push（压栈）和 pop（弹栈）。"
+  },
+  {
+    "id": "c5",
+    "type": "choice",
+    "category": "计算机网络",
+    "difficulty": "medium",
+    "content": "HTTP 状态码 404 表示什么？",
+    "options": [
+      "服务器内部错误",
+      "请求被重定向",
+      "请求的资源未找到",
+      "请求成功"
+    ],
+    "correctAnswer": "请求的资源未找到",
+    "explanation": "404 Not Found 表示服务器无法找到请求的资源。常见状态码：200（成功）、301（永久重定向）、403（禁止访问）、500（服务器内部错误）。"
+  },
+  {
+    "id": "c6",
+    "type": "choice",
+    "category": "Java 基础",
+    "difficulty": "medium",
+    "content": "以下哪个关键字用于 Java 中的异常处理？",
+    "options": [
+      "throw",
+      "assert",
+      "volatile",
+      "transient"
+    ],
+    "correctAnswer": "throw",
+    "explanation": "throw 关键字用于手动抛出异常。Java 异常处理的关键字包括：try、catch、finally、throw、throws。assert 用于断言，volatile 和 transient 用于修饰变量。"
+  },
+  {
+    "id": "c7",
+    "type": "choice",
+    "category": "数据结构",
+    "difficulty": "medium",
+    "content": "二叉搜索树（BST）中查找操作的平均时间复杂度是？",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)"
+    ],
+    "correctAnswer": "O(log n)",
+    "explanation": "在平衡的二叉搜索树中，查找的平均时间复杂度为 O(log n)，因为每次比较都能排除一半的节点。但最坏情况（退化为链表）是 O(n)。"
+  },
+  {
+    "id": "c8",
+    "type": "choice",
+    "category": "操作系统",
+    "difficulty": "medium",
+    "content": "死锁产生的四个必要条件中，不包括下面哪一个？",
+    "options": [
+      "互斥条件",
+      "请求与保持条件",
+      "先来先服务条件",
+      "循环等待条件"
+    ],
+    "correctAnswer": "先来先服务条件",
+    "explanation": "死锁的四个必要条件是：互斥条件、请求与保持条件、不可剥夺条件、循环等待条件。先来先服务（FCFS）是一种调度算法，不是死锁条件。"
+  },
+  {
+    "id": "f1",
+    "type": "flashcard",
+    "category": "计算机网络",
+    "difficulty": "easy",
+    "content": "为什么 TCP 需要三次握手？",
+    "answer": "三次握手的核心目的是确认双方的收发能力。\n\n第一次握手：客户端发送 SYN，服务端收到后知道「客户端能发」。\n第二次握手：服务端回复 SYN+ACK，客户端收到后知道「服务端能收能发」。\n第三次握手：客户端发送 ACK，服务端收到后知道「客户端能收」。\n\n两次不够的原因：如果只有两次，服务端无法确认客户端是否能正常接收数据，可能会导致已失效的连接请求被错误接受。",
+    "explanation": "三次握手是建立可靠连接的最小次数。"
+  },
+  {
+    "id": "f2",
+    "type": "flashcard",
+    "category": "Java 基础",
+    "difficulty": "easy",
+    "content": "`==` 和 `.equals()` 的区别是什么？",
+    "answer": "== 比较的是引用（内存地址），判断两个变量是否指向同一个对象。\n\n.equals() 比较的是内容（值），判断两个对象的内容是否相等。\n\n例如：\nString a = new String(\"hello\");\nString b = new String(\"hello\");\na == b → false（不同对象）\na.equals(b) → true（内容相同）\n\n注意：对于基本类型（int, char 等），只能用 ==，不能用 .equals()。",
+    "explanation": "这是 Java 面试的高频题，理解引用和值的区别是关键。"
+  },
+  {
+    "id": "f3",
+    "type": "flashcard",
+    "category": "Java 基础",
+    "difficulty": "medium",
+    "content": "HashMap 为什么会发生哈希冲突？",
+    "answer": "哈希冲突是指不同的 key 经过哈希函数计算后，得到了相同的哈希值（或映射到了相同的桶）。\n\n原因：\n1. 哈希函数的输出空间有限，而输入空间无限（鸽巢原理）\n2. 无论哈希函数设计多好，总存在不同 key 映射到同一位置的可能\n\nHashMap 解决冲突的方式：\n- JDK 7：链表法（同一个桶用链表存储冲突元素）\n- JDK 8：链表 + 红黑树（链表长度超过 8 时转为红黑树，提高查询效率）",
+    "explanation": "HashMap 的哈希冲突是面试常考点，理解原理和解决方案很重要。"
+  },
+  {
+    "id": "f4",
+    "type": "flashcard",
+    "category": "操作系统",
+    "difficulty": "medium",
+    "content": "为什么虚拟内存能让程序感觉自己有很大的空间？",
+    "answer": "虚拟内存通过以下机制实现：\n\n1. 地址空间隔离：每个进程有自己独立的虚拟地址空间（32位系统为4GB），进程不知道其他进程的存在。\n\n2. 按需加载：不是一次性把所有数据加载到物理内存，而是用到哪页加载哪页（缺页中断）。\n\n3. 页面置换：物理内存不够时，操作系统会把不常用的页面换出到磁盘（swap），腾出空间给当前需要的页面。\n\n4. MMU 映射：CPU 的内存管理单元（MMU）负责将虚拟地址翻译为物理地址，对程序完全透明。\n\n所以程序「以为」自己独占了整个地址空间，实际上物理内存由操作系统统一管理和调度。",
+    "explanation": "虚拟内存是操作系统的核心概念之一。"
+  },
+  {
+    "id": "f5",
+    "type": "flashcard",
+    "category": "数据结构",
+    "difficulty": "easy",
+    "content": "数组和链表的主要区别是什么？",
+    "answer": "数组：\n- 内存连续存储\n- 支持随机访问，时间复杂度 O(1)\n- 插入和删除需要移动元素，时间复杂度 O(n)\n- 大小固定（静态数组）或需要扩容拷贝（动态数组）\n\n链表：\n- 内存不连续，通过指针连接\n- 不支持随机访问，需要从头遍历，时间复杂度 O(n)\n- 插入和删除只需修改指针，时间复杂度 O(1)（已知位置时）\n- 大小灵活，可动态增长\n\n选择依据：频繁查询用数组，频繁增删用链表。",
+    "explanation": "这是最基础的数据结构对比题。"
+  }
+]

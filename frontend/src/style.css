@@ -1,0 +1,81 @@
+/* DuoComputo - Duolingo-inspired global styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --green: #58cc02;
+  --green-dark: #46a302;
+  --green-light: #e6f9e6;
+  --blue: #1cb0f6;
+  --blue-light: #e8f4fd;
+  --orange: #ff9600;
+  --orange-light: #fff3e0;
+  --red: #ff4b4b;
+  --red-light: #ffe6e6;
+  --gray-100: #f7f7f7;
+  --gray-200: #e5e5e5;
+  --gray-300: #ccc;
+  --gray-400: #999;
+  --gray-500: #777;
+  --gray-600: #555;
+  --gray-700: #333;
+  --radius: 16px;
+  --shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  background: var(--gray-100);
+  color: var(--gray-700);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Primary button - Duolingo green style */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: var(--radius);
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-primary {
+  background: var(--green);
+  color: white;
+  box-shadow: 0 4px 0 var(--green-dark);
+}
+
+.btn-primary:hover {
+  background: #4cba02;
+}
+
+.btn-primary:active {
+  box-shadow: none;
+  transform: translateY(4px);
+}
+
+/* Smooth page transitions */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+}
